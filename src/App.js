@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from './ui/Counter';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <Counter initialCount={100} name='Nissim' isDisplay={true} />
+      <Counter initialCount={0} name='Nissim' isDisplay={true} />
+      <Counter initialCount={18} name='Nissim' isDisplay={true} />
+    </>
+  ); // counter(0, Nissim, true)
+};
 
 export default App;
